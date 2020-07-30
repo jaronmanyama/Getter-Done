@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+  }
+  .bg {
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Roboto;
+    background-image: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-');
+ }
+
+#container{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    margin:100px auto;
+    background:#f7f7f7;
+}
+
+h1{
+    background:#2980b9;
+    color:white;
+    margin:0;
+    padding:10px 20px;
+    text-transform:uppercase;
+    font-size:24px;
+    font-weight:normal;/*REMOVING BOLDNESS FROM HI TAG*/
+}
+
+/*PLUS ICON*/
+.fa-plus{
+    float:right;
+}
+
+input{
+    font-size:18px;
+    background-color:#f7f7f7;
+    width:100%;
+    padding:13px 13px 13px 20px;
+    box-sizing:border-box;
+    color: #2980b9;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+    background:#fff;
+    border: 3px solid #2980b9;
+    outline:none;
+}
+
+
+ul{
+    list-style:none;/*REMOVING BULLET POINTS FROM UL ITEMS*/
+    margin:0;
+    padding:0;
+}
+
+li{
+    background:#fff;
+    height: 40px;
+    line-height:40px;
+    color:#666;
+}
+
+li:nth-child(2n){/*STYLING EVERY OTHER LI*/
+    background:#f7f7f7
+}
+
+/*HIDE AND REVEAL TRASH ICON WHEN MOUSE POINTS TO IT*/
+li:hover span{/*SELECT SPAN WHEN LI IS HOVERED OVER*/
+    width:40px;/*THEN EXPAND WIDTH TO 40PX*/
+    opacity:1.0;/*SHOW TRASH ICON*/
+}
+
+
+span{
+    background: #e78c04;
+    height: 40px;
+    margin-right:20px;
+    text-align:center;
+    color:white;
+    width: 0px;/*STARTING SPAN WILL BE O*/
+    display:inline-block;
+    transition:0.2s linear;
+    opacity:0;/*KEEP TRACH ICON FROM SHOWING WHEN NO HOVER DONE*/
+}
+
+.completed{
+    color:gray;
+    text-decoration:line-through;
+}
+
+
